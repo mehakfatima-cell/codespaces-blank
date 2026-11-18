@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Appunti di TPSI - Binario ed Esadecimale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="contenitore">
+
+    <div id="intestazione">
+        <h1>Appunti di TPSI</h1>
+        <p>I sistemi di numerazione posizionali: Binario ed Esadecimale</p>
+    </div>
+
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="comunicazione.html">Comunicazione e Segnali</a>
+        <a href="numeri.html" class="attivo">Binario ed Esadecimale</a>
+        <a href="ascii.html">ASCII e Unicode</a>
+    </div>
+
+    <!-- Sezione 1: Sistemi posizionali -->
+    <div class="riquadro">
+        <h2>1. Cosa sono i sistemi posizionali</h2>
+        <p>
+            Un sistema di numerazione si dice <b>posizionale</b> quando il valore (chiamato <b>peso</b>) 
+            di ogni cifra dipende dalla posizione che occupa dentro il numero.
+        </p>
+        <ul class="lista-semplice">
+            <li>La posizione si conta sempre <b>da destra verso sinistra</b>, partendo dall'esponente 0.</li>
+            <li>La cifra più a destra si chiama <b>cifra meno significativa</b> (vale di meno).</li>
+            <li>La cifra più a sinistra si chiama <b>cifra più significativa</b> (vale di più).</li>
+        </ul>
+        <p>
+            In informatica i due sistemi posizionali più importanti oltre al decimale (base 10) sono il 
+            <b>sistema binario (base 2)</b> e il <b>sistema esadecimale (base 16)</b>.
+        </p>
+    </div>
+
+    <!-- Sezione 2: Sistema Binario -->
+    <div class="riquadro">
+        <h2>2. Il sistema binario (Base 2)</h2>
+        <p>
+            Il sistema binario utilizza solo <b>2 simboli: 0 e 1</b>. Ogni cifra binaria si chiama <b>bit</b> 
+            (<i>binary digit</i>). I bit vengono spesso raggruppati in:
+        </p>
+        <ul class="lista-semplice">
+            <li><b>Nibble:</b> un gruppo di 4 bit.</li>
+            <li><b>Byte:</b> un gruppo di 8 bit (permette di rappresentare 2<sup>8</sup> = 256 combinazioni diverse).</li>
+        </ul>
+
+        <div class="esempio">
+            <b>Attenzione alla differenza:</b> <i>digitale</i> significa un sistema a valori discreti (a gradini), 
+            mentre <i>binario</i> significa una codifica che usa solo due simboli (0 e 1). I computer usano il binario 
+            perché i circuiti elettronici riconoscono facilmente due stati: passaggio di corrente (1) o assenza di corrente (0).
+        </div>
+
+        <h3>Esempio di conversione da Binario a Decimale</h3>
+        <p>
+            Per trasformare il numero binario <b>1001<sub>2</sub></b> in base 10, si moltiplica ogni cifra per 
+            la potenza di 2 corrispondente alla sua posizione:
+        </p>
+
+        <table>
+            <tr>
+                <th colspan="6">Conversione del numero binario 1001<sub>2</sub> in decimale</th>
+            </tr>
+            <tr>
+                <th>Cifra (Moltiplicatore)</th>
+                <td><b>1</b> (MSB)</td>
+                <td><b>0</b></td>
+                <td><b>0</b></td>
+                <td><b>1</b> (LSB)</td>
+                <th rowspan="3">Risultato<br>Decimale</th>
+            </tr>
+            <tr>
+                <th>Potenza della base 2</th>
+                <td>2<sup>3</sup> = 8</td>
+                <td>2<sup>2</sup> = 4</td>
+                <td>2<sup>1</sup> = 2</td>
+                <td>2<sup>0</sup> = 1</td>
+            </tr>
+            <tr>
+                <th>Addendi</th>
+                <td>1 &times; 8 = <b>8</b></td>
+                <td>0 &times; 4 = <b>0</b></td>
+                <td>0 &times; 2 = <b>0</b></td>
+                <td>1 &times; 1 = <b>1</b></td>
+                <td>8 + 0 + 0 + 1 = <b>9<sub>10</sub></b></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Sezione 3: Sistema Esadecimale -->
+    <div class="riquadro">
+        <h2>3. Il sistema esadecimale (Base 16)</h2>
+        <p>
+            Le stringhe binarie diventano subito molto lunghe e difficili da leggere per l'uomo. 
+            Per questo si usa il <b>sistema esadecimale (base 16)</b>, che permette di scrivere gli stessi 
+            numeri in modo molto più corto e compatto.
+        </p>
+        <p>
+            Il sistema esadecimale usa <b>16 simboli</b>: le dieci cifre da <b>0 a 9</b> più le prime sei 
+            lettere maiuscole dell'alfabeto:
+        </p>
+        <div class="esempio">
+            <b>Simboli esadecimali:</b> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, <b>A</b> (10), <b>B</b> (11), <b>C</b> (12), <b>D</b> (13), <b>E</b> (14), <b>F</b> (15).
+        </div>
+
+        <h3>Esempio di conversione da Esadecimale a Decimale</h3>
+        <p>
+            Convertiamo il numero esadecimale <b>3B2<sub>16</sub></b> in decimale (ricordando che B vale 11):
+        </p>
+
+        <table>
+            <tr>
+                <th colspan="5">Conversione del numero esadecimale 3B2<sub>16</sub> in decimale</th>
+            </tr>
+            <tr>
+                <th>Cifra</th>
+                <td><b>3</b></td>
+                <td><b>B</b> (11)</td>
+                <td><b>2</b></td>
+                <th rowspan="3">Risultato<br>Decimale</th>
+            </tr>
+            <tr>
+                <th>Potenza della base 16</th>
+                <td>16<sup>2</sup> = 256</td>
+                <td>16<sup>1</sup> = 16</td>
+                <td>16<sup>0</sup> = 1</td>
+            </tr>
+            <tr>
+                <th>Addendi</th>
+                <td>3 &times; 256 = <b>768</b></td>
+                <td>11 &times; 16 = <b>176</b></td>
+                <td>2 &times; 1 = <b>2</b></td>
+                <td>768 + 176 + 2 = <b>946<sub>10</sub></b></td>
+            </tr>
+        </table>
+
+        <h3>Confronto tra le basi</h3>
+        <p>
+            Più simboli ha la base, più corta diventa la scrittura dello stesso numero. Per esempio, il numero <b>100</b> in decimale si scrive così:
+        </p>
+        <ul class="lista-semplice">
+            <li><b>Base 10 (Decimale):</b> 100<sub>10</sub> (3 cifre)</li>
+            <li><b>Base 2 (Binario):</b> 1100100<sub>2</sub> (7 cifre)</li>
+            <li><b>Base 16 (Esadecimale):</b> 64<sub>16</sub> (2 cifre)</li>
+        </ul>
+    </div>
+
+    <div id="piede">
+        Progetto di TPSI - Realizzato in HTML e CSS
+    </div>
+
+</div>
+
+</body>
+</html>

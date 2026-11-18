@@ -1,0 +1,43 @@
+<svg width="760" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="150" fill="#f9fbfd" stroke="#cccccc" />
+
+  <!-- Box 1: Sorgente -->
+  <rect x="20" y="55" width="110" height="45" fill="#d9e6f2" stroke="#1f4e78" stroke-width="2" />
+  <text x="75" y="82" font-family="Arial" font-size="13" font-weight="bold" fill="#163654" text-anchor="middle">Sorgente</text>
+
+  <!-- Freccia 1 -->
+  <line x1="130" y1="77" x2="175" y2="77" stroke="#1f4e78" stroke-width="2" />
+  <polygon points="175,72 185,77 175,82" fill="#1f4e78" />
+  <text x="157" y="45" font-family="Arial" font-size="11" fill="#222222" text-anchor="middle">Messaggio</text>
+
+  <!-- Box 2: Trasmettitore -->
+  <rect x="185" y="55" width="115" height="45" fill="#d9e6f2" stroke="#1f4e78" stroke-width="2" />
+  <text x="242" y="82" font-family="Arial" font-size="13" font-weight="bold" fill="#163654" text-anchor="middle">Trasmettitore</text>
+
+  <!-- Freccia 2 -->
+  <line x1="300" y1="77" x2="340" y2="77" stroke="#1f4e78" stroke-width="2" />
+  <polygon points="340,72 350,77 340,82" fill="#1f4e78" />
+  <text x="325" y="45" font-family="Arial" font-size="11" fill="#222222" text-anchor="middle">Segnale</text>
+
+  <!-- Box 3: Canale -->
+  <rect x="350" y="55" width="95" height="45" fill="#ffe6cc" stroke="#b35900" stroke-width="2" />
+  <text x="397" y="82" font-family="Arial" font-size="13" font-weight="bold" fill="#663300" text-anchor="middle">Canale</text>
+
+  <!-- Freccia 3 -->
+  <line x1="445" y1="77" x2="485" y2="77" stroke="#1f4e78" stroke-width="2" />
+  <polygon points="485,72 495,77 485,82" fill="#1f4e78" />
+  <text x="470" y="45" font-family="Arial" font-size="11" fill="#222222" text-anchor="middle">Segnale</text>
+
+  <!-- Box 4: Ricevitore -->
+  <rect x="495" y="55" width="105" height="45" fill="#d9e6f2" stroke="#1f4e78" stroke-width="2" />
+  <text x="547" y="82" font-family="Arial" font-size="13" font-weight="bold" fill="#163654" text-anchor="middle">Ricevitore</text>
+
+  <!-- Freccia 4 -->
+  <line x1="600" y1="77" x2="635" y2="77" stroke="#1f4e78" stroke-width="2" />
+  <polygon points="635,72 645,77 635,82" fill="#1f4e78" />
+  <text x="622" y="45" font-family="Arial" font-size="11" fill="#222222" text-anchor="middle">Messaggio</text>
+
+  <!-- Box 5: Destinatario -->
+  <rect x="645" y="55" width="100" height="45" fill="#d9e6f2" stroke="#1f4e78" stroke-width="2" />
+  <text x="695" y="82" font-family="Arial" font-size="13" font-weight="bold" fill="#163654" text-anchor="middle">Destinatario</text>
+</svg>

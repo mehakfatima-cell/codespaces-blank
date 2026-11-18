@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Appunti di TPSI - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="contenitore">
+
+    <!-- Intestazione -->
+    <div id="intestazione">
+        <h1>Appunti di TPSI</h1>
+        <p>Riepilogo degli argomenti di teoria e laboratorio (Settembre - Novembre)</p>
+    </div>
+
+    <!-- Menù di navigazione -->
+    <div id="menu">
+        <a href="index.html" class="attivo">Home</a>
+        <a href="comunicazione.html">Comunicazione e Segnali</a>
+        <a href="numeri.html">Binario ed Esadecimale</a>
+        <a href="ascii.html">ASCII e Unicode</a>
+    </div>
+
+    <!-- Primo riquadro -->
+    <div class="riquadro">
+        <h2>Presentazione del progetto</h2>
+        <p>
+            In questo sito ho raccolto tutti gli argomenti principali che abbiamo studiato in 
+            <b>TPSI</b> (Tecnologie e Progettazione di Sistemi Informatici e di Telecomunicazioni) 
+            dall'inizio dell'anno scolastico fino ad oggi.
+        </p>
+        <p>
+            Per realizzare queste pagine ho usato gli strumenti visti in laboratorio: 
+            <b>HTML</b> per la struttura dei testi, delle liste e delle tabelle, 
+            <b>CSS</b> per i colori, i bordi, i font e il menù di navigazione, 
+            e <b>GitHub</b> per salvare e gestire il progetto.
+        </p>
+    </div>
+
+    <!-- Secondo riquadro: Introduzione al computer -->
+    <div class="riquadro">
+        <h2>1. Il computer e la comunicazione</h2>
+        <p>
+            Il computer è un dispositivo elettronico molto utile soprattutto per due motivi principali:
+        </p>
+        <ul class="lista-semplice">
+            <li><b>Velocità:</b> riesce a fare tantissimi calcoli in pochissimo tempo.</li>
+            <li><b>Capacità di memorizzazione:</b> può salvare una grande quantità di dati e programmi.</li>
+        </ul>
+
+        <h3>Hardware, Software e Interfaccia</h3>
+        <p>
+            Dentro ogni dispositivo moderno c'è una parte fisica chiamata <b>hardware</b> (come il microprocessore) 
+            e una parte logica formata dai programmi, chiamata <b>software</b>. I programmi possono essere 
+            <i>single-purpose</i> (fanno una sola cosa, come una lavatrice) oppure <i>general-purpose</i> 
+            (fanno tante cose diverse, come il PC).
+        </p>
+        <div class="esempio">
+            <b>Definizione di Interfaccia:</b> è il dispositivo fisico che permette a due elementi diversi 
+            (per esempio l'uomo e il computer) di interagire tra loro.<br><br>
+            <b>Definizione di Protocollo:</b> è l'insieme delle regole che stabiliscono come due soggetti 
+            possono comunicare e capirsi.
+        </div>
+    </div>
+
+    <!-- Terzo riquadro: Tabella programma con colspan e rowspan -->
+    <div class="riquadro">
+        <h2>2. Schema del programma svolto</h2>
+        <p>Nella tabella qui sotto sono divisi gli argomenti fatti durante le ore di teoria e di laboratorio:</p>
+
+        <table>
+            <tr>
+                <th colspan="3">Riepilogo Argomenti TPSI</th>
+            </tr>
+            <tr>
+                <th>Ambito</th>
+                <th>Argomento</th>
+                <th>Cosa abbiamo imparato</th>
+            </tr>
+            <tr>
+                <td rowspan="3"><b>Teoria<br>(Giovedì)</b></td>
+                <td>Comunicazione e Segnali</td>
+                <td>Schema di Shannon, codifica, protocolli, segnali analogici e digitali</td>
+            </tr>
+            <tr>
+                <td>Sistemi di Numerazione</td>
+                <td>Sistemi posizionali, sistema binario (base 2) ed esadecimale (base 16)</td>
+            </tr>
+            <tr>
+                <td>Codifica del Testo</td>
+                <td>Codice ASCII standard ed esteso, Unicode e multipli del byte</td>
+            </tr>
+            <tr>
+                <td rowspan="3"><b>Laboratorio<br>(Lunedì)</b></td>
+                <td>Linguaggio HTML</td>
+                <td>Tag base, titoli, paragrafi, liste, immagini, link e tabelle con colspan/rowspan</td>
+            </tr>
+            <tr>
+                <td>Fogli di stile CSS</td>
+                <td>Selettori (tag, classi e ID), colori, font, bordi, allineamenti e menù</td>
+            </tr>
+            <tr>
+                <td>Strumenti di sviluppo</td>
+                <td>Notepad++, VS Codium e gestione dei file su GitHub</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Piede pagina -->
+    <div id="piede">
+        Progetto di TPSI - Realizzato in HTML e CSS
+    </div>
+
+</div>
+
+</body>
+</html>

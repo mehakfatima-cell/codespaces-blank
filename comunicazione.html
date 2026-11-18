@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Appunti di TPSI - Comunicazione e Segnali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="contenitore">
+
+    <div id="intestazione">
+        <h1>Appunti di TPSI</h1>
+        <p>Comunicazione, codifica dell'informazione e segnali analogici/digitali</p>
+    </div>
+
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="comunicazione.html" class="attivo">Comunicazione e Segnali</a>
+        <a href="numeri.html">Binario ed Esadecimale</a>
+        <a href="ascii.html">ASCII e Unicode</a>
+    </div>
+
+    <!-- Sezione 1: Sistema di comunicazione -->
+    <div class="riquadro">
+        <h2>1. Il sistema di comunicazione (Claude Shannon)</h2>
+        <p>
+            Quando comunichiamo ci sono sempre due livelli: la <b>trasmissione dei simboli</b> e il 
+            <b>significato</b> del messaggio (la semantica). Il matematico Claude Shannon ha descritto 
+            lo schema base di ogni sistema di comunicazione:
+        </p>
+
+        <div class="immagine-centro">
+            <img src="img/shannon.svg" alt="Schema del sistema di comunicazione di Shannon" width="720">
+        </div>
+
+        <ul class="lista-semplice">
+            <li><b>Sorgente:</b> chi crea e sceglie il messaggio da inviare.</li>
+            <li><b>Trasmettitore:</b> trasforma il messaggio in un segnale (es. telefono, computer, router).</li>
+            <li><b>Canale:</b> il mezzo attraverso cui viaggia il segnale (fili elettrici, aria, onde radio, fibra ottica).</li>
+            <li><b>Ricevitore:</b> legge il segnale e lo ritrasforma nel messaggio originale.</li>
+            <li><b>Destinatario:</b> chi riceve e capisce il messaggio finale.</li>
+        </ul>
+    </div>
+
+    <!-- Sezione 2: Significante, significato e codifica -->
+    <div class="riquadro">
+        <h2>2. Significante, significato e codifica</h2>
+        <p>
+            Bisogna distinguere bene due concetti fondamentali:
+        </p>
+        <div class="esempio">
+            <b>Messaggio (Significato):</b> è il contenuto dell'informazione che vogliamo comunicare.<br>
+            <b>Codifica (Significante):</b> è il modo in cui scriviamo il messaggio usando un insieme di simboli (chiamato <i>alfabeto codice</i>).
+        </div>
+        <p>
+            Per esempio, il numero "dieci" è il <b>significato</b>, mentre scriverlo come <code>10</code> (numeri arabi) 
+            oppure <code>X</code> (numeri romani) sono due diversi <b>significanti</b>.
+        </p>
+
+        <h3>Codifica a lunghezza fissa e variabile</h3>
+        <ul class="lista-semplice">
+            <li><b>Codifica a lunghezza fissa:</b> tutte le parole codice hanno lo stesso numero di simboli. È quella usata dentro i computer.</li>
+            <li><b>Codifica a lunghezza variabile:</b> le parole codice hanno lunghezze diverse (i simboli più usati sono più corti). Serve per risparmiare spazio, come nell'alfabeto Morse o nella compressione dei file.</li>
+        </ul>
+    </div>
+
+    <!-- Sezione 3: Protocolli e disturbi -->
+    <div class="riquadro">
+        <h2>3. Protocolli e disturbi sul canale</h2>
+        <p>
+            Per comunicare senza errori serve un <b>protocollo di comunicazione</b>, cioè un insieme di regole 
+            che stabilisce come iniziare la trasmissione, come inviare i dati e come chiudere la comunicazione.
+        </p>
+        <p>
+            Durante il viaggio sul canale il segnale può essere rovinato da due problemi:
+        </p>
+        <ul class="lista-semplice">
+            <li><b>Disturbo:</b> ha caratteristiche prevedibili e quindi si può eliminare.</li>
+            <li><b>Rumore:</b> è casuale e imprevedibile, quindi può causare errori nei dati ricevuti.</li>
+        </ul>
+        <p>
+            Per ridurre gli errori si usano spesso dei <b>codici ridondanti</b>, che aggiungono informazioni 
+            extra per permettere al ricevitore di capire se c'è stato un errore e correggerlo.
+        </p>
+    </div>
+
+    <!-- Sezione 4: Analogico e Digitale -->
+    <div class="riquadro">
+        <h2>4. Segnale analogico e segnale digitale</h2>
+        <p>
+            In natura le grandezze fisiche (come il tempo, la temperatura o la velocità) cambiano in modo 
+            continuo e assumono infiniti valori: questi si chiamano <b>segnali analogici</b>. 
+            I computer invece lavorano solo con valori a "salti" ben precisi: questi si chiamano <b>segnali digitali</b>.
+        </p>
+
+        <h3>Come si trasforma un segnale analogico in digitale (Digitalizzazione)</h3>
+        <ol class="lista-ordinata">
+            <li><b>Campionamento:</b> si legge il valore del segnale analogico solo in alcuni istanti di tempo precisi.</li>
+            <li><b>Quantizzazione:</b> si arrotonda ogni valore letto a un livello numerico preciso (si ottiene un'onda a gradini).</li>
+        </ol>
+
+        <p>
+            Per far comunicare il mondo reale con il PC servono i <b>convertitori A/D</b> (da analogico a digitale) 
+            e i <b>convertitori D/A</b> (da digitale ad analogico).
+        </p>
+
+        <div class="esempio">
+            <b>Perché oggi si usa il digitale?</b><br>
+            1. I computer elaborano facilmente i numeri.<br>
+            2. Si possono unire testi, audio, immagini e video (multimedialità) nello stesso dispositivo.<br>
+            3. I segnali digitali resistono molto meglio ai disturbi e al rumore rispetto a quelli analogici.
+        </div>
+    </div>
+
+    <div id="piede">
+        Progetto di TPSI - Realizzato in HTML e CSS
+    </div>
+
+</div>
+
+</body>
+</html>

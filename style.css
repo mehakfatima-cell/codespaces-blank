@@ -1,0 +1,142 @@
+/* Stile generale della pagina */
+body {
+    background-color: #eef2f7;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenitore principale centrato */
+#contenitore {
+    width: 850px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+/* Intestazione in alto */
+#intestazione {
+    background-color: #1f4e78;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+#intestazione h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+#intestazione p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
+
+/* Menù di navigazione */
+#menu {
+    background-color: #163654;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid transparent;
+}
+
+#menu a:hover {
+    background-color: #2c6ca6;
+    border: 1px solid #ffffff;
+}
+
+#menu a.attivo {
+    background-color: #2c6ca6;
+    border: 1px solid #ffffff;
+}
+
+/* Sezioni di contenuto */
+.riquadro {
+    padding: 20px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.riquadro h2 {
+    color: #1f4e78;
+    border-left: 4px solid #1f4e78;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.riquadro h3 {
+    color: #2c6ca6;
+    font-size: 16px;
+}
+
+.riquadro p {
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* Liste */
+ul.lista-semplice {
+    list-style-type: square;
+    line-height: 1.6;
+}
+
+ol.lista-ordinata {
+    line-height: 1.6;
+}
+
+/* Box evidenziato per definizioni ed esempi */
+.esempio {
+    background-color: #f4f8fc;
+    border: 1px solid #b8d0e8;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+/* Immagini */
+.immagine-centro {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.immagine-centro img {
+    border: 1px solid #bbbbbb;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+/* Tabelle */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #888888;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #d9e6f2;
+    color: #163654;
+}
+
+/* Fondo pagina */
+#piede {
+    background-color: #1f4e78;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Appunti di TPSI - ASCII e Unicode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="contenitore">
+
+    <div id="intestazione">
+        <h1>Appunti di TPSI</h1>
+        <p>Codifica dei caratteri (ASCII e Unicode) e multipli del Byte</p>
+    </div>
+
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="comunicazione.html">Comunicazione e Segnali</a>
+        <a href="numeri.html">Binario ed Esadecimale</a>
+        <a href="ascii.html" class="attivo">ASCII e Unicode</a>
+    </div>
+
+    <!-- Sezione 1: Codice ASCII -->
+    <div class="riquadro">
+        <h2>1. La codifica dei caratteri: il codice ASCII</h2>
+        <p>
+            Oltre ai numeri, il computer deve rappresentare in binario anche le lettere maiuscole e minuscole, 
+            la punteggiatura e i simboli della tastiera. Il sistema più famoso si chiama <b>ASCII</b> 
+            (<i>American Standard Code for Information Interchange</i>).
+        </p>
+
+        <ul class="lista-semplice">
+            <li><b>ASCII Standard (7 bit):</b> permette di codificare 2<sup>7</sup> = <b>128 caratteri</b> (numerati da 0 a 127). Nei computer viene salvato usando 8 bit (1 byte), mettendo sempre lo <b>0</b> come primo bit.</li>
+            <li><b>Caratteri di controllo:</b> i primi 32 codici (da 0 a 31) non sono lettere da stampare, ma comandi speciali (come l'invio a capo).</li>
+            <li><b>ASCII Esteso (8 bit):</b> usa tutti gli 8 bit (codici da 128 a 255) per aggiungere le lettere accentate (come à, è, ò) e altri simboli nazionali.</li>
+        </ul>
+
+        <div class="esempio">
+            <b>Curiosità sul codice ASCII:</b> nella tabella ASCII le lettere maiuscole e minuscole hanno codici diversi 
+            (distano 32 posizioni tra loro). Per esempio, la lettera <b>'A'</b> maiuscola è il numero <b>65</b>, mentre la <b>'a'</b> minuscola è il <b>97</b>.
+        </div>
+    </div>
+
+    <!-- Sezione 2: Unicode -->
+    <div class="riquadro">
+        <h2>2. Il sistema Unicode</h2>
+        <p>
+            Con la diffusione di Internet in tutto il mondo, i 256 caratteri dell'ASCII esteso non bastavano più, 
+            perché mancavano gli alfabeti di tantissime lingue (come arabo, cinese, giapponese, cirillico, ecc.).
+        </p>
+        <p>
+            Per risolvere questo problema è nato lo standard <b>Unicode</b>, che usa 16 bit (2 byte) o più per 
+            assegnare un codice unico a decine di migliaia di caratteri di tutte le lingue del mondo, 
+            compresi i simboli matematici e le emoji.
+        </p>
+        <p>
+            <b>Compatibilità:</b> i primi 256 codici di Unicode sono identici ai caratteri del codice ASCII, 
+            così i vecchi file di testo continuano a funzionare senza problemi.
+        </p>
+    </div>
+
+    <!-- Sezione 3: Prefissi binari e decimali -->
+    <div class="riquadro">
+        <h2>3. Multipli del Byte: prefissi binari e decimali</h2>
+        <p>
+            In informatica la memoria si misura in <b>Byte (B)</b>. Poiché il computer lavora in base 2, 
+            i veri multipli del byte sono potenze di 2 (1024 = 2<sup>10</sup>), che hanno nomi diversi dai 
+            classici prefissi decimali (potenze di 10):
+        </p>
+
+        <table>
+            <tr>
+                <th colspan="3">Prefissi Binari (Base 2)</th>
+                <th colspan="3">Prefissi Decimali SI (Base 10)</th>
+            </tr>
+            <tr>
+                <th>Nome</th>
+                <th>Sigla</th>
+                <th>Valore esatto</th>
+                <th>Nome</th>
+                <th>Sigla</th>
+                <th>Valore</th>
+            </tr>
+            <tr>
+                <td>Kibibyte</td>
+                <td><b>KiB</b></td>
+                <td>2<sup>10</sup> B = 1024 B</td>
+                <td>Kilobyte</td>
+                <td><b>kB</b></td>
+                <td>10<sup>3</sup> B = 1000 B</td>
+            </tr>
+            <tr>
+                <td>Mebibyte</td>
+                <td><b>MiB</b></td>
+                <td>2<sup>20</sup> B = 1024 KiB</td>
+                <td>Megabyte</td>
+                <td><b>MB</b></td>
+                <td>10<sup>6</sup> B = 1000 kB</td>
+            </tr>
+            <tr>
+                <td>Gibibyte</td>
+                <td><b>GiB</b></td>
+                <td>2<sup>30</sup> B = 1024 MiB</td>
+                <td>Gigabyte</td>
+                <td><b>GB</b></td>
+                <td>10<sup>9</sup> B = 1000 MB</td>
+            </tr>
+            <tr>
+                <td>Tebibyte</td>
+                <td><b>TiB</b></td>
+                <td>2<sup>40</sup> B = 1024 GiB</td>
+                <td>Terabyte</td>
+                <td><b>TB</b></td>
+                <td>10<sup>12</sup> B = 1000 GB</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="piede">
+        Progetto di TPSI - Realizzato in HTML e CSS
+    </div>
+
+</div>
+
+</body>
+</html>
